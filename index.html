@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="./lib/d3.js"></script>
+  <script src="index.js"></script>
+  <script src="histogram.js"></script>
+  <script src="scatter.js"></script>
+</head>
+<body>
+  <svg class="histo"></svg>
+  <svg class="scatter"></svg>
+</body>
+<style>
+
+  .bar {
+    fill: steelblue;
+  }
+  
+  .axis text {
+    font: 10px sans-serif;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .x.axis path {
+    display: none;
+  }
+  
+  .histo {
+    width: 460px;
+    height: 500px;
+  }
+  </style>
+</html>
